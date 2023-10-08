@@ -1,3 +1,5 @@
+package org.example;
+
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -28,10 +30,4 @@ public class SquareRootTest {
         double result = calculator.squareRoot(-25.0);
         assertEquals(Double.MIN_VALUE, result, 0.0);
     }
-
-    // @Test
-    // public void testSquareRootOfNonNumericValue() {
-    //     double result = calculator.squareRoot(Double.NaN);
-    //     assertEquals(Double.NaN, result, 0.0);
-    // }
 }

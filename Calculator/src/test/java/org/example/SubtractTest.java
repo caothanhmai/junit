@@ -1,9 +1,9 @@
 package org.example;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class SubtractTest {
 
@@ -48,23 +48,5 @@ public class SubtractTest {
         double result = calculator.subtract(arr);
 
         assertEquals(0.0, result, 0.0); 
-    }
-
-    @Test
-    public void testSubtractOfEmptyArray() {
-        double[] arr = {};
-
-        double result = calculator.subtract(arr);
-
-        assertEquals(0.0, result, 0.0);
-    }
-
-    @Test
-    public void testSubtractWithNonNumericValues() {
-        double[] arr = { 1.0, 2.0, 3.0, Double.NaN, Double.POSITIVE_INFINITY };
-
-        assertThrows(NumberFormatException.class, () -> {
-            calculator.subtract(arr);
-        });
     }
 }

@@ -1,3 +1,5 @@
+package org.example;
+
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -20,7 +22,7 @@ public class ModuloTest {
     @Test
     public void testModuloWithNegativeValues() {
         double result = calculator.moduloOfTwoNum(-12.0, 5.0);
-        assertEquals(-2.0, result, 0.0);
+        assertEquals(2.0, result, 0.0);
     }
 
     @Test

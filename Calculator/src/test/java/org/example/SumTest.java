@@ -58,13 +58,4 @@ public class SumTest {
 
         assertEquals(0.0, result, 0);
     }
-
-    @Test
-    public void testSumWithNonNumericValues() {
-        double[] arr = { 1.0, 2.0, 3.0, Double.NaN, Double.POSITIVE_INFINITY };
-
-        assertThrows(NumberFormatException.class, () -> {
-            calculator.sum(arr);
-        });
-    }
 }

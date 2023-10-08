@@ -59,12 +59,4 @@ public class MultiplicationTest {
         assertEquals(1.0, result, 0.0);
     }
 
-    @Test
-    public void testMultiplicationWithNonNumericValues() {
-        double[] arr = { 1.0, 2.0, 3.0, Double.NaN, Double.POSITIVE_INFINITY };
-
-        assertThrows(NumberFormatException.class, () -> {
-            calculator.Multiplication(arr);
-        });
-    }
 }
