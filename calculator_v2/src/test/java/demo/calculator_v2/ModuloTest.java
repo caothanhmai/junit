@@ -1,4 +1,4 @@
-package org.example;
+package demo.calculator_v2;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -22,13 +22,13 @@ public class ModuloTest {
     @Test
     public void testModuloWithNegativeValues() {
         double result = calculator.moduloOfTwoNum(-12.0, 5.0);
-        assertEquals(2.0, result, 0.0);
+        assertEquals(-2.0, result, 0.0);
     }
 
     @Test
     public void testModuloWithZeroDivisor() {
         double result = calculator.moduloOfTwoNum(8.0, 0.0);
-        assertEquals(Double.MIN_VALUE, result, 0.0);
+        assertEquals(Double.NaN, result, 0.0);
     }
 
     @Test

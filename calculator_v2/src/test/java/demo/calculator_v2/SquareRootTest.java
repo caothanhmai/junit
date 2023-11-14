@@ -1,4 +1,4 @@
-package org.example;
+package demo.calculator_v2;
 
 import org.junit.Before;
 import org.junit.Test;
